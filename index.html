@@ -36,18 +36,20 @@
         <label for="query-type">Query Type <span class="required-input">*</span></label>
         <div class="radio-inputs">
           <div class="radio-option">
-            <input type="radio"> General Enquiry
+            <input type="radio" id="general-enquiry" name="query-type" value="General Enquiry"> 
+            <label for="general-enquiry">General Enquiry</label>
           </div>
         
           <div class="radio-option">
-            <input type="radio"> Support Request
+            <input type="radio" id="support-request" name="query-type" value="Support Request"> 
+            <label for="support-request">Support Request</label>
           </div>
         </div>
         <div class="form-alert">Please select a query type</div>
       </div>
       <div class="form-item">
         <div>
-          <label for="message">Message</label>
+          <label for="message">Message <span class="required-input">*</span></label>
           <textarea name="message" id="message" rows="4"></textarea>
           <p class="form-alert">This field is required</p>
         </div>
@@ -63,12 +65,13 @@
       <button type="submit" id="submit-btn" class="submit-btn">Submit</button>
     </form>
   </div>
-  <div id="sucess-msg" class="success-msg">
+  <div id="success-msg" class="success-msg">
     <div class="message-header">
       <img src="assets/images/icon-success-check.svg" alt="">
       Message Sent!
     </div>
     <p>Thanks for completing the form. We'll be in touch soon!</p>
   </div>
+  <script src="main.js"></script>
 </body>
-</html>>
+</html>

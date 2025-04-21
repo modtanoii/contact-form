@@ -20,7 +20,7 @@ form.addEventListener('submit', (e) => {
         isValid = false
 
         document.querySelector('#first-name + .form-alert').style.display = 'block'
-        document.querySelector('#first-name').style,border = '1px solid var(--red)'
+        document.querySelector('#first-name').style.border = '1px solid var(--red)'
     } else {
         document.querySelector('#first-name + .form-alert').style.display = 'none'
         document.querySelector('#first-name').style.border = '1px solid var(--medium-gray)'
